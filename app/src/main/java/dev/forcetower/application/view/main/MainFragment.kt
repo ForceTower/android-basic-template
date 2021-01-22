@@ -1,4 +1,4 @@
-package dev.forcetower.application.view.basic
+package dev.forcetower.application.view.main
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,20 +6,20 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.viewModels
 import dagger.hilt.android.AndroidEntryPoint
-import dev.forcetower.application.databinding.FragmentBasicBinding
+import dev.forcetower.application.databinding.FragmentMainBinding
 import dev.forcetower.toolkit.components.BaseFragment
 
 @AndroidEntryPoint
-class BasicFragment : BaseFragment() {
-    private val viewModel: BasicViewModel by viewModels()
-    private lateinit var binding: FragmentBasicBinding
+class MainFragment : BaseFragment() {
+    private val viewModel: MainViewModel by viewModels()
+    private lateinit var binding: FragmentMainBinding
 
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        return FragmentBasicBinding.inflate(inflater, container, false).also {
+        return FragmentMainBinding.inflate(inflater, container, false).also {
             binding = it
         }.root
     }

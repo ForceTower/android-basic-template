@@ -1,9 +1,9 @@
-package dev.forcetower.application.view.basic
+package dev.forcetower.application.view.main
 
 import androidx.hilt.lifecycle.ViewModelInject
 import androidx.lifecycle.ViewModel
 import dev.forcetower.application.core.data.basic.BasicRepository
 
-class BasicViewModel @ViewModelInject constructor(
+class MainViewModel @ViewModelInject constructor(
     private val repository: BasicRepository
 ) : ViewModel()
