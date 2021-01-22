@@ -5,7 +5,7 @@ import dagger.hilt.android.HiltAndroidApp
 import timber.log.Timber
 
 @HiltAndroidApp
-class BaseApplication : Application() {
+class _P_NAME_Application : Application() {
     override fun onCreate() {
         super.onCreate()
         // "Every time you log in production, a puppy dies"

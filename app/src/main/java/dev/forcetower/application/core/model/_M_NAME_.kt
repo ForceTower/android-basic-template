@@ -4,7 +4,7 @@ import androidx.room.Entity
 import androidx.room.PrimaryKey
 
 @Entity
-data class Basic(
+data class _M_NAME_(
     @PrimaryKey
     val id: Int
 )

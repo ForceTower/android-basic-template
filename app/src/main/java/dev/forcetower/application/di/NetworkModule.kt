@@ -7,7 +7,7 @@ import dagger.hilt.InstallIn
 import dagger.hilt.components.SingletonComponent
 import dev.forcetower.application.BuildConfig
 import dev.forcetower.application.Constants
-import dev.forcetower.application.core.source.network.BasicService
+import dev.forcetower.application.core.source.network._P_NAME_Service
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
@@ -21,13 +21,13 @@ import javax.inject.Singleton
 object NetworkModule {
     @Provides
     @Singleton
-    fun service(client: OkHttpClient, gson: Gson): BasicService =
+    fun service(client: OkHttpClient, gson: Gson): _P_NAME_Service =
         Retrofit.Builder()
             .baseUrl(Constants.SERVICE_BASE_URL)
             .addConverterFactory(GsonConverterFactory.create(gson))
             .client(client)
             .build()
-            .create(BasicService::class.java)
+            .create(_P_NAME_Service::class.java)
 
     @Provides
     @Singleton
