@@ -1,4 +1,4 @@
-package dev.forcetower.application.feature
+package dev.forcetower.application.view
 
 import android.os.Bundle
 import androidx.core.view.WindowCompat
