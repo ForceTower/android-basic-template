@@ -1,4 +1,4 @@
-package dev.forcetower.application.core.data.basic
+package dev.forcetower.application.core.data._M_NAME_
 
 import dev.forcetower.application.core.source.local._P_NAME_DB
 import dev.forcetower.application.core.source.network._P_NAME_Service
